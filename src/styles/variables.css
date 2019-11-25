@@ -9,7 +9,7 @@
   --color-main: var(--__COLOR__BLUE);
   --color-sub: var(--__COLOR_ORANGE);
   --color-background: var(--__COLOR_BEIGE);
-  --color-text: var(--__COLOR_ORANGE);
+  --color-text: var(--__COLOR_BLACK);
   --color-error: var(--__COLOR_ORANGE);
 
   /* space */
