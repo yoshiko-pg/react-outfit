@@ -21,7 +21,9 @@
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier '**/*.@(js|ts|tsx)'",
     "format:check": "npm run format -- --list-different",
-    "format:fix": "npm run format -- --write"
+    "format:fix": "npm run format -- --write",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,8 +53,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.7.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
@@ -64,6 +72,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.1.0",
     "lint-staged": "^9.4.3",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "webpack": "4.41.0"
   }
 }
