@@ -1,5 +1,13 @@
+@import url('./variables.css');
+@import url('./reset.css');
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -14,14 +22,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text);
+  overflow-wrap: break-word;
 }

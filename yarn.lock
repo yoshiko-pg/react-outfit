@@ -11677,6 +11677,11 @@ resolve@^1.1.6, resolve@^1.10.0:
   dependencies:
     path-parse "^1.0.6"
 
+ress@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/ress/-/ress-2.0.2.tgz#def3855b3635ac52d9073028e1c51fa4dc5686e3"
+  integrity sha512-ZSqandm4BmA5fpHBEL7OP5TJCf43Njaib/nvUSzUvNCX3cySPoJo8lIbP7dXcpr/ej9yojUnDHs4RlsoHczDFw==
+
 restore-cursor@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
