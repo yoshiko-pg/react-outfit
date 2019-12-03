@@ -13,5 +13,6 @@
         "custom-properties",
         "declarations"
       ],
+      "color-hex-length": "long",
     }
 }

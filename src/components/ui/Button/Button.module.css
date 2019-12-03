@@ -1,0 +1,64 @@
+.button {
+  min-width: 120px;
+  height: var(--size);
+  padding: 0 calc(var(--size) / 2);
+  font-weight: bold;
+  line-height: var(--size);
+  color: var(--G-color-background);
+  background-color: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 4px;
+  outline: none;
+  transition: transform 0.1s ease-in;
+}
+
+.button:not(:disabled):hover,
+.button:not(:disabled):focus {
+  transform: translate(1px, 1px);
+}
+
+.button:disabled {
+  --color: var(--G-color-inactive);
+
+  cursor: default;
+}
+
+/******************
+ * size
+ ******************/
+.s {
+  --size: 32px;
+
+  font-size: 14px;
+}
+
+.m {
+  --size: 40px;
+
+  font-size: 16px;
+}
+
+.l {
+  --size: 48px;
+
+  font-size: 18px;
+}
+
+/******************
+ * color
+ ******************/
+.main {
+  --color: var(--G-color-main);
+}
+
+.danger {
+  --color: var(--G-color-error);
+}
+
+/******************
+ * outline
+ ******************/
+.outline {
+  color: var(--color);
+  background-color: var(--G-color-background);
+}

@@ -12,7 +12,8 @@
     "format:js": "prettier '**/*.@(js|ts|tsx)'",
     "format:css": "stylelint '**/*.css'",
     "format:check": "npm run format:js -- --list-different && npm run format:css",
-    "format:fix": "npm run format:js -- --write && npm run format:css -- --fix",
+    "format:js:fix": "npm run format:js -- --write",
+    "format:css:fix": "npm run format:css -- --fix",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -38,8 +39,12 @@
   },
   "lint-staged": {
     "*.@(js|ts|tsx)": [
-      "npm run format:fix",
+      "npm run format:js:fix",
       "npm run lint:fix",
+      "git add"
+    ],
+    "*.css": [
+      "npm run format:css:fix",
       "git add"
     ]
   },

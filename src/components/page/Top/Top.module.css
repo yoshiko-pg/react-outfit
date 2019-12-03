@@ -2,6 +2,44 @@
   /* TBD */
 }
 
+.header {
+  padding: 128px 0;
+  text-align: center;
+}
+
 .title {
-  color: var(--color-main);
+  font-size: 52px;
+  color: var(--G-color-main);
+}
+
+.mainImage {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--G-spacing-6);
+  background-color: var(--G-color-main);
+  border-radius: 49%;
+}
+
+.section {
+  --width: 1000px;
+
+  padding: 0 calc(100% / 2 - var(--width) / 2);
+}
+.section + .section {
+  margin-top: var(--G-spacing-6);
+}
+
+.sectionTitle {
+  margin-bottom: var(--G-spacing-3);
+  font-size: 32px;
+}
+
+.showcase {
+  align-items: center;
+}
+.showcase > * + * {
+  margin-left: var(--G-spacing-3);
+}
+.showcase + .showcase {
+  margin-top: var(--G-spacing-3);
 }

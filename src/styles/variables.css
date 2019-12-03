@@ -1,29 +1,31 @@
 :root {
   /* primitive color */
-  --__COLOR__BLUE: #008da9;
-  --__COLOR_ORANGE: #bd6500;
-  --__COLOR_BEIGE: #f6f5da;
-  --__COLOR_BLACK: #19282b;
+  --COLORBLUE: #008da9;
+  --COLOR_ORANGE: #bd6500;
+  --COLOR_BLACK: #19282b;
+  --COLOR_GRAY: #d6d7db;
+  --COLOR_WHITE: #ffffff;
 
   /* color */
-  --color-main: var(--__COLOR__BLUE);
-  --color-sub: var(--__COLOR_ORANGE);
-  --color-background: var(--__COLOR_BEIGE);
-  --color-text: var(--__COLOR_BLACK);
-  --color-error: var(--__COLOR_ORANGE);
+  --G-color-main: var(--COLORBLUE);
+  --G-color-sub: var(--COLOR_ORANGE);
+  --G-color-text: var(--COLOR_BLACK);
+  --G-color-error: var(--COLOR_ORANGE);
+  --G-color-inactive: var(--COLOR_GRAY);
+  --G-color-background: var(--COLOR_WHITE);
 
   /* space */
-  --spacing-1: 8px;
-  --spacing-2: 16px;
-  --spacing-3: 24px;
-  --spacing-4: 32px;
-  --spacing-5: 40px;
-  --spacing-6: 48px;
-  --spacing-7: 56px;
-  --spacing-8: 64px;
+  --G-spacing-1: 8px;
+  --G-spacing-2: 16px;
+  --G-spacing-3: 24px;
+  --G-spacing-4: 32px;
+  --G-spacing-5: 40px;
+  --G-spacing-6: 48px;
+  --G-spacing-7: 56px;
+  --G-spacing-8: 64px;
 
   /* z-index */
-  --zIndex-base: 0;
-  --zIndex-front: 1;
-  --zIndex-back: -1;
+  --G-zIndex-base: 0;
+  --G-zIndex-front: 1;
+  --G-zIndex-back: -1;
 }
