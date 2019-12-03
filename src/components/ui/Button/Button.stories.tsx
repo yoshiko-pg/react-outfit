@@ -11,9 +11,11 @@ storiesOf('ui/Button', module)
   .add('default', () => (
     <>
       <Button>button</Button>
-      <Button outline>button</Button>
+      <Button href="/" outline>
+        button
+      </Button>
       <Button disabled>button</Button>
-      <Button outline disabled>
+      <Button href="/" outline disabled>
         button
       </Button>
     </>
@@ -21,13 +23,13 @@ storiesOf('ui/Button', module)
   .add('danger', () => (
     <>
       <Button color="danger">button</Button>
-      <Button color="danger" outline>
+      <Button href="/" color="danger" outline>
         button
       </Button>
       <Button color="danger" disabled>
         button
       </Button>
-      <Button color="danger" outline disabled>
+      <Button href="/" color="danger" outline disabled>
         button
       </Button>
     </>
@@ -37,7 +39,7 @@ storiesOf('ui/Button', module)
   .add('size=l', () => <Button size="l">button</Button>)
   .add('loading', () => (
     <>
-      <Button size="s" loading>
+      <Button size="s" loading href="/">
         button
       </Button>
       <Button size="m" loading>
@@ -46,7 +48,7 @@ storiesOf('ui/Button', module)
       <Button size="l" loading>
         button
       </Button>
-      <Button outline size="s" loading>
+      <Button outline size="s" loading href="/">
         button
       </Button>
       <Button outline size="m" loading>

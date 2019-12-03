@@ -65,6 +65,7 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-curly-newline": "off", // prettierと競合する
+    "react/button-has-type": "off",
     /**
     * jsx-a11y
     */

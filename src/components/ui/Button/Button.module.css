@@ -1,9 +1,11 @@
 .button {
+  display: inline-block;
   height: var(--size);
   padding: 0 calc(var(--size) / 2 + var(--G-spacing-2));
   font-weight: bold;
   line-height: var(--size);
   color: var(--G-color-background);
+  text-decoration: none;
   background-color: var(--color);
   border: 1px solid var(--color);
   border-radius: 4px;
@@ -11,12 +13,12 @@
   transition: transform 0.1s ease-in;
 }
 
-.button:not(:disabled):hover,
-.button:not(:disabled):focus {
+.button:not(.disabled):hover,
+.button:not(.disabled):focus {
   transform: translate(1px, 1px);
 }
 
-.button:disabled {
+.button.disabled {
   --color: var(--G-color-inactive);
 
   cursor: default;
