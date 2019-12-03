@@ -1,7 +1,6 @@
 .button {
-  min-width: 120px;
   height: var(--size);
-  padding: 0 calc(var(--size) / 2);
+  padding: 0 calc(var(--size) / 2 + var(--G-spacing-2));
   font-weight: bold;
   line-height: var(--size);
   color: var(--G-color-background);
@@ -21,6 +20,11 @@
   --color: var(--G-color-inactive);
 
   cursor: default;
+}
+
+.inner {
+  display: inline-flex;
+  align-items: center;
 }
 
 /******************
@@ -61,4 +65,22 @@
 .outline {
   color: var(--color);
   background-color: var(--G-color-background);
+}
+
+/******************
+ * loading
+ ******************/
+.loading {
+  padding-right: 0;
+  pointer-events: none;
+}
+
+.loading .loadingCircle {
+  --circleSize: calc(var(--size) / 2);
+
+  display: inline-block;
+  width: var(--circleSize);
+  height: var(--circleSize);
+  margin: 0 var(--G-spacing-1);
+  opacity: 0.4;
 }

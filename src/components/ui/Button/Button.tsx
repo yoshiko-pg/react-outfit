@@ -2,12 +2,14 @@ import React, { PropsWithoutRef } from 'react'
 import cx from 'classnames'
 
 import styles from './Button.module.css'
+import { LoadingCircle } from '../LoadingCircle'
 
 type Props = PropsWithoutRef<JSX.IntrinsicElements['button']> & {
   className?: string
   color?: 'main' | 'danger'
   size?: 's' | 'm' | 'l'
   outline?: boolean
+  loading?: boolean
 }
 
 const Button = ({
@@ -17,6 +19,7 @@ const Button = ({
   size = 'm',
   type = 'button',
   outline = false,
+  loading = false,
   ...rest
 }: Props) => (
   // eslint-disable-next-line react/button-has-type
@@ -30,9 +33,13 @@ const Button = ({
       [styles.m]: size === 'm',
       [styles.l]: size === 'l',
       [styles.outline]: outline,
+      [styles.loading]: loading,
     })}
   >
-    {children}
+    <span className={styles.inner}>
+      {children}
+      {loading && <LoadingCircle className={styles.loadingCircle} />}
+    </span>
   </button>
 )
 

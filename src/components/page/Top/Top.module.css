@@ -21,7 +21,7 @@
 }
 
 .section {
-  --width: 1000px;
+  --width: 1200px;
 
   padding: 0 calc(100% / 2 - var(--width) / 2);
 }
@@ -42,4 +42,8 @@
 }
 .showcase + .showcase {
   margin-top: var(--G-spacing-3);
+}
+
+.loadingCircle {
+  color: var(--G-color-inactive);
 }
