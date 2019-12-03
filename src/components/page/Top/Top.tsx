@@ -2,6 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 
 import { Button } from '../../ui/Button'
+import { Link } from '../../ui/Link'
 import { LoadingCircle } from '../../ui/LoadingCircle'
 
 import styles from './Top.module.css'
@@ -81,6 +82,17 @@ export const Top = ({ className }: Props) => (
         <Button size="l" loading>
           Click me
         </Button>
+      </div>
+    </section>
+
+    <section className={styles.section}>
+      <h2 className={styles.sectionTitle}>Link</h2>
+      <div className={styles.showcase}>
+        <Link href="/">@href = Normal Link</Link>
+        <Link onClick={() => {}}>Button Link</Link>
+        <Link href="/" disabled>
+          @disabled = Disabled Button Link
+        </Link>
       </div>
     </section>
 

@@ -78,7 +78,7 @@ const Button = ({
 
   // link
   return (
-    <a className={allClassName} href={href} {...props}>
+    <a className={allClassName} href={href} role="button" {...props}>
       {content}
     </a>
   )
