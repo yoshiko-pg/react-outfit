@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "typecheck": "tsc",
     "lint": "eslint '**/*.@(js|ts|tsx)'",
     "lint:fix": "npm run lint -- --fix",
     "format:js": "prettier '**/*.@(js|ts|tsx)'",
@@ -41,6 +42,7 @@
     "*.@(js|ts|tsx)": [
       "npm run format:js:fix",
       "npm run lint:fix",
+      "npm run typecheck",
       "git add"
     ],
     "*.css": [
