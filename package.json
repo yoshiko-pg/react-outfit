@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn typecheck",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "typecheck": "tsc",
     "lint": "eslint '**/*.@(js|ts|tsx)'",
     "lint:fix": "npm run lint -- --fix",
     "format:js": "prettier '**/*.@(js|ts|tsx)'",
@@ -14,7 +15,7 @@
     "format:check": "npm run format:js -- --list-different && npm run format:css",
     "format:js:fix": "npm run format:js -- --write",
     "format:css:fix": "npm run format:css -- --fix",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 && yarn typecheck",
     "build-storybook": "build-storybook"
   },
   "eslintConfig": {
