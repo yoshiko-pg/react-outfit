@@ -1,0 +1,31 @@
+.portalLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--zIndex-portal);
+  width: 100%;
+}
+
+.contentLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--zIndex-front);
+}
+
+button.closeLayer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--zIndex-base);
+  display: block;
+  width: 100%;
+  cursor: default;
+  appearance: normal;
+}
+
+.closeLayerBlack {
+  background-color: rgba(0, 0, 0, 0.3);
+}

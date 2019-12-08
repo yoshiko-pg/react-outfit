@@ -1,0 +1,17 @@
+.animateToggle {
+  /* TBD */
+}
+
+.appear,
+.enter,
+.leave.leaveActive {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.leave,
+.appear.appearActive,
+.enter.enterActive {
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}

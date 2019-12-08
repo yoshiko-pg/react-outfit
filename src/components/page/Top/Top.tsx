@@ -4,6 +4,7 @@ import cx from 'classnames'
 import { Button } from '../../ui/Button'
 import { Link } from '../../ui/Link'
 import { LoadingCircle } from '../../ui/LoadingCircle'
+import { Modal } from '../../ui/Modal'
 
 import styles from './Top.module.css'
 
@@ -100,6 +101,16 @@ export const Top = ({ className }: Props) => (
       <h2 className={styles.sectionTitle}>LoadingCircle</h2>
       <div className={styles.showcase}>
         <LoadingCircle className={styles.loadingCircle} />
+      </div>
+    </section>
+
+    <section className={styles.section}>
+      <h2 className={styles.sectionTitle}>Modal</h2>
+      <div className={styles.showcase}>
+        <Modal renderButton={({ open }) => <Button onClick={open}>Open</Button>}>
+          <h2 className={styles.sectionTitle}>Hello</h2>
+          <p>This is modal content.</p>
+        </Modal>
       </div>
     </section>
   </div>
