@@ -1,0 +1,27 @@
+.textArea {
+  flex-grow: 1;
+  width: 256px;
+  height: var(--input-height);
+  height: 10em;
+  padding: 8px 16px;
+  line-height: 1.6;
+  background-color: var(--G-color-white);
+  border: 1px solid var(--G-color-border);
+  outline: none;
+  transition: border-color 0.1s ease-out;
+}
+
+.textArea:hover,
+.textArea:focus {
+  border-color: var(--G-color-main);
+}
+
+.textArea:disabled {
+  color: var(--G-color-inactive);
+  background-color: var(--G-color-background);
+  border-color: var(--G-color-inactive);
+}
+
+.textArea.isError {
+  border-color: var(--G-color-negative);
+}

@@ -21,6 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   line-height: 1;
-  color: var(--color-text);
+  color: var(--G-color-text);
   overflow-wrap: break-word;
 }

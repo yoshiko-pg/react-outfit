@@ -7,11 +7,14 @@
   --COLOR_WHITE: #ffffff;
 
   /* color */
+  --G-color-white: var(--COLOR_WHITE);
   --G-color-main: var(--COLORBLUE);
   --G-color-sub: var(--COLOR_ORANGE);
   --G-color-text: var(--COLOR_BLACK);
   --G-color-error: var(--COLOR_ORANGE);
   --G-color-inactive: var(--COLOR_GRAY);
+  --G-color-negative: var(--COLOR_ORANGE);
+  --G-color-border: var(--COLOR_GRAY);
   --G-color-background: var(--COLOR_WHITE);
 
   /* space */

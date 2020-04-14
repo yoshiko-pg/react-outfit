@@ -1,0 +1,30 @@
+.input {
+  flex-grow: 1;
+  width: 256px;
+  height: var(--input-height);
+  padding: 0 16px;
+  line-height: var(--input-height);
+  background-color: var(--G-color-white);
+  border: 1px solid var(--G-color-border);
+  outline: none;
+  transition: border-color 0.1s ease-out;
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--G-color-main);
+}
+
+.input:disabled {
+  color: var(--G-color-inactive);
+  background-color: var(--G-color-background);
+  border-color: var(--G-color-inactive);
+}
+
+.input.isError {
+  border-color: var(--G-color-negative);
+}
+
+.input.m {
+  --input-height: 40px;
+}

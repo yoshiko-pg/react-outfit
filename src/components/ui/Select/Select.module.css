@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  flex-grow: 1;
+  width: 256px;
+}
+
+.wrapper::before,
+.wrapper::after {
+  position: absolute;
+  right: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-color: transparent transparent var(--G-color-border) transparent;
+  border-style: solid;
+  border-width: 0 4px 4px 4px;
+}
+
+.wrapper::before {
+  top: 14px;
+}
+
+.wrapper::after {
+  bottom: 14px;
+  transform: rotate(180deg);
+}
+
+.select {
+  --select-height: 40px;
+
+  width: 100%;
+  height: var(--select-height);
+  padding: 0 16px;
+  line-height: var(--select-height);
+  background-color: var(--G-color-white);
+  border: 1px solid var(--G-color-border);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.1s ease-out;
+}
+
+.select:hover,
+.select:focus {
+  border-color: var(--G-color-main);
+}
+
+.select:disabled {
+  color: var(--G-color-inactive);
+  background-color: var(--G-color-background);
+  border-color: var(--G-color-inactive);
+}
+
+.select.isError {
+  border-color: var(--G-color-negative);
+}
